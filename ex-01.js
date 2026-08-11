@@ -1,8 +1,8 @@
 let score=0;
 let question="Что означает слово `cat`? [кошка, собака]";
 let answer=prompt(question);
-
-if (answer=="кошка") {
+ 
+if (answer.toLowerCase()=="кошка") {
     score=score+10;
     alert("все верно!");
 }
@@ -11,7 +11,7 @@ else {
 }
 
 question="Что означает слово `dog`? [кошка, собака]";
-answer=prompt(question);
+answer=prompt(question).toLowerCase();
 if (answer=="собака") {
     score=score+10;
     alert("все верно!");
